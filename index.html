@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Trading Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {margin:0; font-family: 'Roboto', sans-serif; scroll-behavior: smooth; background:#f0f8f5; color:#333;}
+    a {text-decoration:none; color:inherit;}
+    h1, h2, h3 {margin:0; padding:0;}
+    section {padding:60px 20px; text-align:center;}
+    header {background:linear-gradient(90deg, #2d8f6f, #4caf6a); color:white; padding:20px 0; position:sticky; top:0; z-index:100;}
+    header h1 {font-size:2rem;}
+    header p {font-size:1.1rem; margin-top:5px;}
+    nav {margin-top:10px;}
+    nav a {margin:0 15px; color:white; font-weight:bold; transition:0.3s;}
+    nav a:hover {color:#a7e0c9;}
+    .hero {background: url('solar-bg.jpg') no-repeat center center/cover; color:white; text-align:center; padding:120px 20px; position:relative;}
+    .hero h1 {font-size:2.8rem; margin-bottom:20px; text-shadow:1px 1px 5px rgba(0,0,0,0.5);}
+    .hero p {font-size:1.3rem; margin-bottom:30px; text-shadow:1px 1px 5px rgba(0,0,0,0.5);}
+    .hero button {padding:15px 30px; font-size:1.1rem; border:none; border-radius:5px; background-color:#4caf6a; color:white; cursor:pointer; transition:0.3s;}
+    .hero button:hover {background-color:#3b7f56; transform: scale(1.05);}
+    h2 {color:#2d8f6f; margin-bottom:30px;}
+    .services {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+    .service-card {background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:250px; transition: transform 0.3s;}
+    .service-card:hover {transform: translateY(-10px);}
+    .service-card h3 {margin-bottom:10px; color:#2d8f6f;}
+    input, textarea {padding:12px; width:100%; max-width:400px; margin:5px 0; border-radius:5px; border:1px solid #ccc;}
+    button.send {padding:12px 25px; background-color:#4caf6a; border:none; color:white; cursor:pointer; border-radius:5px; transition:0.3s;}
+    button.send:hover {background-color:#3b7f56; transform:scale(1.05);}
+    footer {background:linear-gradient(90deg, #2d8f6f, #4caf6a); color:white; text-align:center; padding:30px 20px;}
+    footer a {color:white; margin:0 10px; font-weight:bold; font-size:1.2rem; transition:0.3s;}
+    footer a:hover {color:#a7e0c9; transform:scale(1.1);}
+    .social-btn {display:inline-block; margin:10px; padding:12px 20px; border-radius:50px; background:#2d8f6f; color:white; font-size:1.1rem; transition:0.3s;}
+    .social-btn:hover {background:#3b7f56; transform:scale(1.1);}
+    @media(max-width:768px){ .hero h1 {font-size:2.2rem;} .hero p {font-size:1.1rem;} nav a {display:block; margin:10px 0;} .services {flex-direction:column; align-items:center;}}
+</style>
+</head>
+<body>
+<header>
+    <h1>Power Trading Company</h1>
+    <p>When Energy Meets Innovation</p>
+    <nav><a href="#about">About Us</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="hero">
+    <h1>Clean, Affordable, and Reliable Solar Solutions</h1>
+    <p>Empowering Assam with sustainable energy solutions at the lowest costs.</p>
+    <button onclick="window.location='#contact'">Get a Free Consultation</button>
+</div>
+<section id="about">
+    <h2>About Us</h2>
+    <p>Power Trading Company delivers high-quality solar energy solutions for homes, businesses, and industries across Assam. Our mission is to make clean and affordable energy accessible to everyone while reducing carbon footprints. Trusted, reliable, and innovative – that’s our promise.</p>
+</section>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card"><h3><i class="fas fa-solar-panel"></i> Solar Panels</h3><p>Efficient, long-lasting, and cost-effective panels.</p></div>
+        <div class="service-card"><h3><i class="fas fa-bolt"></i> Inverters</h3><p>Reliable power conversion for uninterrupted energy supply.</p></div>
+        <div class="service-card"><h3><i class="fas fa-battery-full"></i> Batteries</h3><p>Backup solutions to keep you powered, anytime.</p></div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <p><strong>Address:</strong> A.T. Road, Ajanta Bypass, Near Indian Oil, Tarajan, Jorhat – 785006</p>
+    <p><strong>Phone:</strong> +91 376-4046645 / +91 7099977749</p>
+    <p><strong>Email:</strong> powertradingcompany.ptc@gmail.com</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/917099977749" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i> +91 7099977749</a></p>
+    <p><strong>Follow Us:</strong></p>
+    <a href="https://www.facebook.com/share/1Cstr1MBAV/?mibextid=wwXIfr" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="https://www.instagram.com/power_trading_co?igsh=MXJxZXF4dHJsam9zeA==" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+    <form style="margin-top:20px;"><input type="text" placeholder="Your Name" required><br><input type="email" placeholder="Your Email" required><br><textarea placeholder="Your Message" rows="5" required></textarea><br><button type="submit" class="send">Send Message</button></form>
+</section>
+<footer>
+    <p>© 2025 Power Trading Company | When Energy Meets Innovation</p>
+    <p><a href="https://www.facebook.com/share/1Cstr1MBAV/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/power_trading_co?igsh=MXJxZXF4dHJsam9zeA==" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/917099977749" target="_blank"><i class="fab fa-whatsapp"></i></a></p>
+</footer>
+</body>
+</html>
